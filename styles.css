@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    background-color: rgb(187, 35, 35);
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    padding: 2em;
+  }
+
+img{
+  border-radius: 50%;
+  height: 5em;
+}
+
+.Xmas{
+    /* finding cool font */
+    text-align: center;
+  }
+  
+#snow {
+    background: none;
+    z-index: 1;
+    background-image:
+
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake1.png'), 
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake2.png'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/191814/flake3.png');
+
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    animation: snow 10s linear infinite;
+  }
+@keyframes snow {
+   0% {
+  background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+   50% {
+  background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+   100% {
+  background-position: 500px 1000px, 200px 400px, -100px 300px;
+  }
+}
+/* count down */
+#xMas{
+position: absolute;
+top: 3%;
+left: 50%;
+transform: translateX(-50%);
+border-bottom: 2px solid;
+font-size: 22px;
+padding: 10px;
+border-top: 2px solid;
+}
