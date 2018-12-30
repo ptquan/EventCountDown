@@ -1,7 +1,7 @@
-const xMas = document.getElementById('xMas');
+/*  const xMas = document.getElementById('xMas');
         const xDay = new Date(" Dec 24,2018 24:00:00").getTime();
         //Tổng số giây 
-        const xmasCome = setInterval(function (){
+        const xmasCome = setInterval(() =>{
  
             const now = new Date().getTime();
             //Số s đến thời gian hiện tại
@@ -22,57 +22,58 @@ const xMas = document.getElementById('xMas');
                         clearInterval(xmasCome);
                         xMas.innerHTML = "Keep calm and jingle on ";
                         }              
-    },1000)
-
-const newYear = document.getElementById('newYear');
-        const sunCalendar = new Date(" Dec 30,2018 24:00:00").getTime();
-        //Tổng số giây 
-        const countDown = setInterval(function (){
+    },1000); */
  
-            const now = new Date().getTime();
-            //Số s đến thời gian hiện tại
-            const timeRest = sunCalendar - now;
-            //Số s còn lại để đến tết;
-            const day = Math.floor(timeRest/(1000*60*60*24));
-            //Số ngày còn lại
-            const hours = Math.floor(timeRest%(1000*60*60*24)/(1000*60*60));
-            // Số giờ còn lại
-            const minute = Math.floor(timeRest%(1000*60*60)/(1000*60));
-            // Số phút còn lại
-            const sec = Math.floor(timeRest%(1000*60)/(1000));
-            // Số giây còn lại
-
-            newYear.innerHTML = `<strong> There are :  ${day} Day ${hours} Hours ${minute} minutes ${sec} until New Year`;
-            
-                        if(timeRest <= 0){
-                        clearInterval(countDown);
-                        newYear.innerHTML = "Happy New Year! ";
-                        }              
+    const newYear1 = document.getElementById("newYear");
+    const day = document.getElementById("day");
+    const hour = document.getElementById("hour");
+    const minute = document.getElementById("minute");
+    const second = document.getElementById("second");
+    
+    const newYear = new Date(" Dec 31,2018 24:00:00").getTime();
+    const newYearCountDown = setInterval(() =>{
+        const now = new Date().getTime();
+        const timeRest = newYear - now;
+        const days = Math.floor(timeRest/(1000*60*60*24));
+        const hours = Math.floor(timeRest%(1000*60*60*24)/(1000*60*60));
+        const minutes = Math.floor(timeRest%(1000*60*60)/(1000*60));
+        const seconds = Math.floor(timeRest%(1000*60)/(1000));
+    
+        day.innerHTML = days;
+        hour.innerHTML = hours;
+        minute.innerHTML = minutes;
+        second.innerHTML = seconds;
+    
+    if( timeRest <= 0) {
+        clearInterval(newYearCountDown);
+        newYear1.innerHTML = "happy new year!";
+    }
     },1000)
-
-    const moon = document.getElementById('chineseNewYear');
-        const moonCalendar = new Date(" feb 5,2019 24:00:00").getTime();
-        //Tổng số giây 
-        const countDown2 = setInterval(function (){
- 
-            const now = new Date().getTime();
-            //Số s đến thời gian hiện tại
-            const timeRest = moonCalendar - now;
-            //Số s còn lại để đến tết;
-            const day = Math.floor(timeRest/(1000*60*60*24));
-            //Số ngày còn lại
-            const hours = Math.floor(timeRest%(1000*60*60*24)/(1000*60*60));
-            // Số giờ còn lại
-            const minute = Math.floor(timeRest%(1000*60*60)/(1000*60));
-            // Số phút còn lại
-            const sec = Math.floor(timeRest%(1000*60)/(1000));
-            // Số giây còn lại
-
-            moon.innerHTML = ` <strong> There are ONLY: ${day} Day ${hours} Hours ${minute} minutes ${sec} until Chinese New Year`;
-            
-                        if(timeRest <= 0){
-                        clearInterval(countDown2);
-                        moon.innerHTML = "Happy New Year! ";
-                        }              
+    //  china new year
+    const lunarYear = document.getElementById("chineseNewYear");
+    const d = document.getElementById("d");
+    const h = document.getElementById("h");
+    const m = document.getElementById("m");
+    const s = document.getElementById("s");
+    
+    const lunarNewYear = new Date(" feb 05,2019 24:00:00").getTime();
+    const CountDown2 = setInterval(() =>{
+        const now = new Date().getTime();
+        const timeRest = lunarNewYear - now;
+        const days = Math.floor(timeRest/(1000*60*60*24));
+        const hours = Math.floor(timeRest%(1000*60*60*24)/(1000*60*60));
+        const minutes = Math.floor(timeRest%(1000*60*60)/(1000*60));
+        const seconds = Math.floor(timeRest%(1000*60)/(1000));
+    
+        d.innerHTML = days;
+        h.innerHTML = hours;
+        m.innerHTML = minutes;
+        s.innerHTML = seconds;
+    
+    if( timeRest <= 0) {
+        clearInterval(CountDown2);
+        lunarYear.innerHTML = "happy new year!";
+    }
     },1000)
-
+        
+    

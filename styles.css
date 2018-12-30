@@ -3,10 +3,10 @@
   padding: 0;
 }
 html, body {
-    background-color: rgb(187, 35, 35);
-    font-family: 'Quicksand', sans-serif;
-    color: white;
-    padding: 2em;
+  background: rgb(119, 13, 13);
+  color:#d69b3c; 
+  font-family: 'Quicksand', sans-serif;
+  padding: 2em;
   }
 
 img{
@@ -19,6 +19,19 @@ img{
     text-align: center;
   }
   
+.countdown {
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+.countdown span {
+  padding: 1em;
+  margin: 0.5 em;
+  font-size: 0.8rem;
+}
+
 #snow {
     background: none;
     z-index: 1;
@@ -47,7 +60,7 @@ img{
   }
 }
 /* count down */
-#xMas{
+/* #newYear{
 position: absolute;
 top: 3%;
 left: 50%;
@@ -56,4 +69,4 @@ border-bottom: 2px solid;
 font-size: 22px;
 padding: 10px;
 border-top: 2px solid;
-}
+} */
