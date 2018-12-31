@@ -77,14 +77,16 @@
     },1000);
     
     // guessing number
-    document.getElementById("myBtn").addEventListener("click", function guessGame() {
+     document.getElementById("myBtn").addEventListener("click", function guessGame() {
         const answer = Math.round(Math.random()*10);
         const guessNumber = prompt("Select a number ");
+        const guessesRemaining = 5
         
         if (guessNumber != answer) {
-            document.getElementById("result").innerHTML = `The lucky number is :  ${answer}  <br> Click F5 to play again`;
+            document.getElementById("result").innerHTML = `The lucky number is :  ${answer}`;
+            
         }else {
-            document.getElementById("result2").innerHTML = `Congratulation ! You Are Winner !`;
+            document.getElementById("result2").innerHTML = "Congratulation ! You Are Winner !";
         }  
     });
-    
+     
