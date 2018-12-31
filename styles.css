@@ -42,7 +42,7 @@ h2 {
 #gameZone{
   z-index: 10;
   position: relative;
-  top:5em;
+  top:9em;
   text-align: center;
 }
 /* #myBtn {
