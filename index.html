@@ -4,18 +4,20 @@
  <head>
  <title>MerryXmas & Happy New Yearrrrrr! ^^ => HYF</title>
  <link rel="stylesheet" href="styles.css">
+ <link href="https://fonts.googleapis.com/css?family=Ranchers" rel="stylesheet">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  </head>
  <body>
      <img src ="https://hackyourfuture.dk/static/hackyourfuture-logo-white.png">
  
- <div class="Xmas">
-       <h1> New Year Countdown </h1>
- </div>
+ <div class="Xmas"></div>
  
  <div id="snow"></div>
  
  <!-- Countdown -->
- <div id="xMas" class="countdown"></div>
+ <div id="xMas" class="countdown">
+     <h1> New Year Countdown </h1>
+ </div>
  
  <div id="newYear" class="countdown">
      <span>
@@ -34,27 +36,33 @@
            <div id="second"></div>
            Seconds
      </span>
- </div>
- <div id="chineseNewYear" class="countdown">
+ </div>   
+ <h2>lunarNewYear Countdown</h2>
+ <div id="lunarNewYear" class="countdown">
      <span>
-         <div id="d"></div>
+         <div id="d">00</div>
          Days
        </span>
    <span>
-         <div id="h"></div>
+         <div id="h">00</div>
          Hours
        </span>
    <span>
-         <div id="m"></div>
+         <div id="m">00</div>
          Minutes
        </span>
    <span>
-         <div id="s"></div>
+         <div id="s">00</div>
          Seconds
    </span>
  </div>
- <!-- add music -->
- <audio src="" autoplay></audio>
+ <!-- game -->
+ <div id="gameZone">
+      <h2>Choose Your Number</h2>
+      <button id="myBtn">Start Game</button>
+      <p id="result"></p>
+      <p id="result2"></p>
+ </div>
    <script src="main.js"></script>
  
  </body>

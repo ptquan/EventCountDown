@@ -48,9 +48,9 @@
         clearInterval(newYearCountDown);
         newYear1.innerHTML = "happy new year!";
     }
-    },1000)
-    //  china new year
-    const lunarYear = document.getElementById("chineseNewYear");
+    },1000);
+    //  lunay new year
+    const lunarYear = document.getElementById("lunarNewYear");
     const d = document.getElementById("d");
     const h = document.getElementById("h");
     const m = document.getElementById("m");
@@ -69,11 +69,22 @@
         h.innerHTML = hours;
         m.innerHTML = minutes;
         s.innerHTML = seconds;
-    
+        
     if( timeRest <= 0) {
         clearInterval(CountDown2);
         lunarYear.innerHTML = "happy new year!";
     }
-    },1000)
+    },1000);
+    
+    // guessing number
+    document.getElementById("myBtn").addEventListener("click", function guessGame() {
+        const answer = Math.round(Math.random()*10);
+        const guessNumber = prompt("Select a number ");
         
+        if (guessNumber != answer) {
+            document.getElementById("result").innerHTML = `The lucky number is :  ${answer}  <br> Click F5 to play again`;
+        }else {
+            document.getElementById("result2").innerHTML = `Congratulation ! You Are Winner !`;
+        }  
+    });
     

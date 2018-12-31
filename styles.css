@@ -1,25 +1,33 @@
+
 *{
   margin: 0;
   padding: 0;
 }
+html {
+  background: url(https://pickyournextadventure.com/image/74349-full_free-merry-christmas-eve-tree-images-pictures-photos-graphics.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
 html, body {
-  background: rgb(119, 13, 13);
   color:#d69b3c; 
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Ranchers', cursive;
   padding: 2em;
   }
-
 img{
-  border-radius: 50%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
   height: 5em;
+  width: 10em;
 }
-
-.Xmas{
-    /* finding cool font */
-    text-align: center;
-  }
-  
+img:hover
+{
+  box-shadow: 1px 1px 1px grey;
+}
+h2 {
+  text-align: center;
+}
 .countdown {
+    top:2em;
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
@@ -31,7 +39,24 @@ img{
   margin: 0.5 em;
   font-size: 0.8rem;
 }
-
+#gameZone{
+  z-index: 10;
+  position: relative;
+  top:5em;
+  text-align: center;
+}
+/* #myBtn {
+  margin: 0.5em;
+  border-radius: 50% ;
+  width: 10em;
+  height: 5em;
+} */
+#myBtn{
+  margin: 1em;
+  border-radius: 50%;
+  background-color:rgb(210, 230, 173);
+  padding:1.2em 1.4em;
+}
 #snow {
     background: none;
     z-index: 1;
